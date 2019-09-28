@@ -145,7 +145,7 @@ d3.csv("https://raw.githubusercontent.com/danielferriss/PygArtHackTheater2019/ma
 
     // Add Y axis
     var y = d3.scaleLinear()
-      .domain([0, d3.max(data, function(d) { return +d.Quantity; })/2])
+      .domain([0, d3.max(data, function(d) { return +d.Quantity; })])
       .range([ height, 0 ]);
     svg.append("g")
       .attr("class", "axis")
