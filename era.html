@@ -138,7 +138,7 @@ d3.csv("https://raw.githubusercontent.com/danielferriss/PygArtHackTheater2019/ma
 
     // Add X axis --> it is a date format
     var x = d3.scaleLinear()
-      .domain(d3.extent(data, function(d) { return d.EventDateNo; }))
+      .domain(d3.extent(data, function(d) { return parseInt(d.EventDateNo); }))
       .range([ 0, width ]);
     svg.append("g")
       .attr("class", "axis")
