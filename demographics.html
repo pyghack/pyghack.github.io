@@ -94,7 +94,7 @@ var svg = d3.select("#my_dataviz")
         "translate(" + margin.left + "," + margin.top + ")");
 
 // read json data
-d3.json("https://gist.githubusercontent.com/mingir2/29a8cebbd4b5a2d9ad308cc6dfb64347/raw/038e5db6d8b3e6871ec4d115c0a278816f00aea9/pyghack_demo.json", function(data) {
+d3.json("./demographics.json", function(data) {
 
   // Give the data to this cluster layout:
   var root = d3.hierarchy(data).sum(function(d){ return d.value}) // Here the size of each leave is given in the 'value' field in input data
